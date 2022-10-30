@@ -2,6 +2,8 @@ server/certs
 server/public
 client/dist
 
+docker-compose.yml
+
 
 # Logs
 logs
