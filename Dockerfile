@@ -28,7 +28,7 @@ RUN npm ci --only=production
 COPY server .
 
 # Copy from web_builder
-COPY --from=web_builder /web/public ./public
+COPY --from=web_builder /web/dist ./public
 
 EXPOSE 8080
 CMD [ "node", "index.js" ]
